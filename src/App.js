@@ -1,9 +1,10 @@
 import './App.scss';
+import Header from './components/Header/Header'
 
 function App() {
   return (
     <div >
-    <h1>Let's build Wanderly</h1>
+    <Header/>
     </div>
   );
 }
