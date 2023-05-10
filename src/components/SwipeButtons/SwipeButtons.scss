@@ -1,0 +1,47 @@
+.swipeButtons {
+    margin-top: 15px;
+  position: fixed;
+  bottom: 10vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  &__replay {
+    color: orange;
+  }
+  &__close {
+    color: rgb(240, 48, 10);
+  }
+  &__star {
+    color: rgb(84, 168, 224);
+  }
+  &__favorite {
+    color: rgb(232, 17, 53);
+  }
+  &__account {
+    color: black;
+  }
+}
+
+.swipeButtons__favorite:hover {
+  animation-name: pulse;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swipeButtons .MuiIconButton-root {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}

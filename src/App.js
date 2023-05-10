@@ -1,11 +1,16 @@
+// import { BrowserRouter as Route, Router, } from 'react-router-dom';
 import './App.scss';
-import Header from './components/Header/Header'
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import Swipe from './pages/Swipe/Swipe';
 
 function App() {
   return (
-    <div >
-    <Header/>
-    </div>
+    <>
+    <Routes>
+      <Route path="/swipe" element={<Swipe />} />
+    </Routes>
+    </>
   );
 }
 
