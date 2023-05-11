@@ -1,8 +1,10 @@
+@use "../../styles/partials/typography" as *;
+
 video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.5;
+    // opacity: 0.5;
 }
 
 .onborading{
@@ -23,16 +25,21 @@ video {
 }
 &__buttons:hover{
     background-color: #f57f5b;
+    color: #282327;
+    border: 2px solid #282327;
 }
 &__buttons{
-    height: 36px;
+    height: 40px;
+    font-size: 17px;
     margin: 0 16px;
     width: 288px;
-    border-radius: .9375rem;
-    border: .125rem solid #035c88;
-    color: #035c88;
+    border-radius: 25px;
+    border: 2px solid #035c88;
+    color: #ec6408;
+    // color: #282327;
+    // background-color: #529cd2;
     background-color: white;
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: "Alegreya Sans SC";
 }
 }
 
