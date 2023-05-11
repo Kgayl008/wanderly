@@ -1,6 +1,6 @@
 import PersonIcon from "@mui/icons-material/Person";
 import ForumIcon from "@mui/icons-material/Forum";
-import Logo from "../../assets/Icons/wanderly.png";
+import Logo from "../../assets/Logo/wanderly.png";
 import IconButton from "@mui/material/IconButton";
 import "./Header.scss";
 

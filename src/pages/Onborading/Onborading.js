@@ -1,7 +1,7 @@
 import './Onborading.scss';
 import React from 'react';
 import Video from '../../assets/Video/video.mp4';
-import Logo from '../../assets/Icons/wanderly.png';
+import Logo from '../../assets/Logo/wanderly.png';
 
 const Onborading = () => {
     return (
