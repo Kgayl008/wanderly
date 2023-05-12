@@ -2,7 +2,7 @@ import './Chat.scss'
 
 const Chat = () => {
     return(
-        <div></div>
+        <div>I am the chat page</div>
     )
 };
 

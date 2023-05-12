@@ -3,7 +3,7 @@ import ForumIcon from "@mui/icons-material/Forum";
 import Logo from "../../assets/Logo/wanderly.png";
 import IconButton from "@mui/material/IconButton";
 // import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-// import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Header.scss";
 
 const Header = ({backButton}) => {
@@ -15,9 +15,11 @@ const Header = ({backButton}) => {
             <img src={Logo}
                 alt="Wanderly Logo"
                 className="header__logo"/>
+            <Link to="/chat">
             <IconButton>
                 <ForumIcon fontSize="large"/>
             </IconButton>
+            </Link>
         </div>
     );
 };
