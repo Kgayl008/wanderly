@@ -2,6 +2,7 @@ import './Onborading.scss';
 import React from 'react';
 import Video from '../../assets/Video/video.mp4';
 import Logo from '../../assets/Logo/wanderly.png';
+import { Link } from "react-router-dom";
 
 const Onborading = () => {
     return (
@@ -16,7 +17,9 @@ const Onborading = () => {
                     className='onborading__logo'/>
             </div>
             <div className='onborading__buttons-section'>
-                <button className='onborading__buttons'>CREATE ACCOUNT</button>
+                <Link to="/profile">
+                    <button className='onborading__buttons'>CREATE ACCOUNT</button>
+                </Link>
                 <button className='onborading__buttons'>SIGN IN</button>
             </div>
         </div>
