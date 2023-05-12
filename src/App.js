@@ -10,8 +10,8 @@ function App() {
   return (
     <>
     <Routes>
-        <Route path="/" element={<Swipe />} />
-        <Route path="/onborading" element={<Onborading />} />
+        <Route path="/swipe" element={<Swipe />} />
+        <Route path="/" element={<Onborading />} />
         <Route path="/profile" element={<ProfileCreation />} />
     </Routes>
     </>

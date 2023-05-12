@@ -1,16 +1,22 @@
-import firebase from "firebase";
+// import firebase from 'firebase';
+// import 'firebase/firestore';
+// import firebase from "firebase"; 
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAgF5YuRGOczKRsNo4XBLHjqhGpYUOKHGU",
-    authDomain: "wanderly-455da.firebaseapp.com",
-    projectId: "wanderly-455da",
-    storageBucket: "wanderly-455da.appspot.com",
-    messagingSenderId: "1071553837847",
-    appId: "1:1071553837847:web:a814395097986a1004d552",
-    measurementId: "G-JZ5TJZX64M"
+    apiKey: "AIzaSyAmBhobFQTeR4nQFTI73OVuyPmMbKhInAo",
+    authDomain: "wanderly-bd918.firebaseapp.com",
+    projectId: "wanderly-bd918",
+    storageBucket: "wanderly-bd918.appspot.com",
+    messagingSenderId: "692471075888",
+    appId: "1:692471075888:web:1434e04556f53e1e5ac9f5",
+    measurementId: "G-DH1X58LYJH"
 };
-
-const firebaseApp = firebase.initailizingApp(firebaseConfig);
+// const firebaseApp = firebase.initailizingApp(firebaseConfig);
+const firebaseApp = firebase.default.initializeApp(firebaseConfig);
 const database = firebaseApp.firestore();
 
 export default database;
+

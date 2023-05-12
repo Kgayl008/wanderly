@@ -20,7 +20,7 @@ const Onborading = () => {
                 <Link to="/profile">
                     <button className='onborading__buttons'>CREATE ACCOUNT</button>
                 </Link>
-                <button className='onborading__buttons'>SIGN IN</button>
+                {/* <button className='onborading__buttons'>SIGN IN</button> */}
             </div>
         </div>
     )
