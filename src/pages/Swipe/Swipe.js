@@ -5,7 +5,7 @@ import SwipeButtons from '../../components/SwipeButtons/SwipeButtons';
 const Swipe = () => {
     return (
         <div>
-            <Header/>
+            <Header backButton="/"/>
             <Card/>
             <SwipeButtons/>
         </div>
