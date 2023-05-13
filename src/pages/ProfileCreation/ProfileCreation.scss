@@ -11,12 +11,10 @@ h1{
     padding: 1rem;
     // @include tablet{
     //     padding: 0 5rem;
+    //     height: 100vh;
     // }
     // @include desktop{
-    //     display: flex;
-        
-    //     align-items: center;
-    //     flex-direction: column;
+    //     height: 100vh;
     // }
     &__title{
         padding-top: 1.5rem;

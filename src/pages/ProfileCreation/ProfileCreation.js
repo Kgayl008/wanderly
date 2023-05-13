@@ -33,6 +33,15 @@ const ProfileCreation = () => {
                 <button>High-end ($5000-$10,000)</button>
                 <button>Luxury (over $10,000)</button>
             </div>
+            <h4 className='profile__question'>What's your availability for travel?</h4>
+            <div>
+                <button>Only weekends</button>
+                <button>Flexible schedule</button>
+                <button>Summer vacation only</button>
+                <button>Winter vacation only</button>
+                <button>Anytime, as long as I have notice.</button>
+            </div>
+            
         </div>
     )
 };
