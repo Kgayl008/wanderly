@@ -1,8 +1,11 @@
-import './Chat.scss'
+import './Chat.scss';
+import Header from "../../components/Header/Header";
 
 const Chat = () => {
     return(
-        <div>I am the chat page</div>
+        <div>
+            <Header/>
+        </div>
     )
 };
 
