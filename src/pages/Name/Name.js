@@ -22,7 +22,6 @@ const Name = () => {
                 </Link>
             </div>
         </div>
-
     )
 }
 

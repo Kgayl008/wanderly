@@ -14,7 +14,7 @@ const Photo = () => {
                     className='name__logo'/>
             </header>
             <h1 className='name__question'>Add your first photo</h1>
-            <input type="text" className='name__input'></input>
+            <input type="text" className='name__input' placeholder="Enter URL"></input>
             <div className='next'>
                 <Link to='/profile'>
                     <IconButton>
