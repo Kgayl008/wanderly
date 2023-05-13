@@ -17,7 +17,7 @@ const Onborading = () => {
                     className='onborading__logo'/>
             </div>
             <div className='onborading__buttons-section'>
-                <Link to="/profile">
+                <Link to="/name">
                     <button className='onborading__buttons'>CREATE ACCOUNT</button>
                 </Link>
                 {/* <button className='onborading__buttons'>SIGN IN</button> */}
