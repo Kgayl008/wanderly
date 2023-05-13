@@ -12,9 +12,11 @@ const Header = ({backButton}) => {
             <IconButton>
                 <PersonIcon fontSize="large"/>
             </IconButton>
+            <Link to='/'>
             <img src={Logo}
                 alt="Wanderly Logo"
                 className="header__logo"/>
+            </Link>
             <Link to="/chat">
             <IconButton>
                 <ForumIcon fontSize="large"/>
