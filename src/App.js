@@ -9,12 +9,14 @@ import Chat from './pages/Chat/Chat';
 import Name from './pages/Name/Name';
 import Questions from './pages/Questions/Questions';
 import Photo from './pages/Photo/Photo';
+import Home from './pages/Home/Home';
 
 function App() {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Onborading/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="onborading" element={<Onborading/>}/>
                 <Route path="/name" element={<Name/>}/>
                 <Route path="/photo" element={<Photo/>}/>
                 <Route path="/profile" element={<ProfileCreation/>}/>
@@ -27,3 +29,12 @@ function App() {
 }
 
 export default App;
+
+
+// const db = firebase.firestore();
+
+// // Create a new collection for users
+// const usersCollection = db.collection("users");
+
+// // Export the collection for use in other parts of your app
+// export { usersCollection };
