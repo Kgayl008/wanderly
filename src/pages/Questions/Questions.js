@@ -1,5 +1,6 @@
 import './Questions.scss';
 import 'firebase/firestore';
+import Logo from '../../assets/Logo/wanderly.png';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import { Link } from 'react-router-dom';
@@ -7,6 +8,11 @@ import { Link } from 'react-router-dom';
 const Questions = () => {
     return (
         <div className='profile'>
+            <header>
+                <img src={Logo}
+                    alt='Wanderly logo'
+                    className='name__logo'/>
+            </header>
             <h4 className='profile__question'>What's your budget for travel?</h4>
             <div>
                 <button>Budget (less than $1000)</button>

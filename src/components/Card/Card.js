@@ -20,10 +20,16 @@ useEffect(() => {
                 <TinderCard
                     className="swipe"
                     key={person.name}
+                    // onSwipe={(swipe) => {
+                    //     console.log(swipe);
+                    // }}
                     preventSwipe={['up','down']}
                     >
                     <div className="card" style={{backgroundImage: `url(${person.url})`}}>
                         <h3>{person.name}</h3>
+                        <button>{person.traveler}</button>
+                        <button>{person.activity}</button>
+                        <button>{person.budget}</button>
                     </div>
                 </TinderCard>
             ))}
