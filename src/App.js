@@ -10,13 +10,17 @@ import Name from './pages/Name/Name';
 import Questions from './pages/Questions/Questions';
 import Photo from './pages/Photo/Photo';
 import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import SignIn from './pages/SignIn/SignIn'
 
 function App() {
     return (
         <>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="onborading" element={<Onborading/>}/>
+                <Route path="/signup" element={<SignIn/>}/>
+                <Route path="/login" element={<Login/>}></Route>
+                <Route path="/onborading" element={<Onborading/>}/>
                 <Route path="/name" element={<Name/>}/>
                 <Route path="/photo" element={<Photo/>}/>
                 <Route path="/profile" element={<ProfileCreation/>}/>
