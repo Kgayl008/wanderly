@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/Logo/wanderly.png';
-import { collection, addDoc, doc } from '@firebase/firestore';
+import { collection, addDoc, doc, updateDoc } from '@firebase/firestore';
 import { db, auth} from '../../firebase';
 
 const Name = () => {
@@ -14,10 +14,10 @@ const Name = () => {
         e.preventDefault();
 
         try {
+            
             const userId = auth.currentUser.uid;
-            const userRef = collection(db, "users");
-            await addDoc(userRef, {
-                userId,
+            const userDoc = doc(db, "users", userId)
+            await updateDoc(userDoc, {
                 name
             });
             console.log("User data stored successfully");

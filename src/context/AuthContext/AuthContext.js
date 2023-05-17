@@ -1,7 +1,7 @@
 import {createContext, useContext, useEffect, useState} from 'react';
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged} from 'firebase/auth';
 import {auth, db} from '../../firebase';
-import {collection, addDoc} from 'firebase/firestore';
+import {collection, setDoc, doc} from 'firebase/firestore';
 
 const UserContext = createContext();
 
@@ -17,7 +17,9 @@ export const AuthContextProvider = ({children}) => {
             // Store user data in Firestore
             const userId = user.uid;
             const userRef = collection(db, 'users');
-            await addDoc(userRef, {userId, email: user.email});
+            await setDoc(doc(userRef, userId), { email: user.email});
+
+            
             console.log('User data stored successfully');
 
             return user;
