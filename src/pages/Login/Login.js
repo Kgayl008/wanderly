@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password).then((userCredential) => { // Signed in
             const user = userCredential.user;
-            navigate("/name")
+            navigate("/swipe")
             console.log(user);
         }).catch((error) => {
             const errorCode = error.code;

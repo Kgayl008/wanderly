@@ -20,18 +20,18 @@ h1{
     }
 }
 
-button{
+.profile__button{
     background-color: white;
     border-radius: 14px;
     padding: 4px;
     border: none;
     margin: 1px;
 }
-button:active{
+.profile__button:active{
     background-color: black;
     color: white;
 }
-button:hover{
+.profile__button:hover{
     background-color: black;
     color: white;
 }

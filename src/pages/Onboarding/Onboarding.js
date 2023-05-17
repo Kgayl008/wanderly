@@ -1,10 +1,10 @@
-import './Onborading.scss';
+import './Onboarding.scss';
 import React from 'react';
 import Video from '../../assets/Video/video.mp4';
 import Logo from '../../assets/Logo/wanderly.png';
 import {Link} from "react-router-dom";
 
-const Onborading = () => {
+const Onboarding = () => {
     return (
         <div className='onborading'>
             <video src={Video}
@@ -18,7 +18,7 @@ const Onborading = () => {
             </div>
             <div className='onborading__buttons-section'>
                 <Link to="/signup">
-                    <button className='onborading__buttons'>SIGN IN</button>
+                    <button className='onborading__buttons'>SIGN UP</button>
                 </Link>
                 <Link to="/login">
                     <button className='onborading__buttons'>LOG IN</button>
@@ -28,4 +28,4 @@ const Onborading = () => {
     )
 }
 
-export default Onborading;
+export default Onboarding;
