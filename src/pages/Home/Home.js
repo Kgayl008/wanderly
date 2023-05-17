@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <h2 className='home__text'><span>Swipe Right</span> on Your Next <span>Adventure</span> with Wanderly - The <span>Travel App</span> for <span>Solo Explorers</span></h2>
             </div>
-            <h2>Find Your <br/>Next Adventure </h2>
+            <h2 className='home__sub-title'>Find Your <br/>Next Adventure </h2>
             <div className='card__mobile-container'>
                 <div className='row__one'>
                     <div className='card__wrapper'>
@@ -81,52 +81,6 @@ const Home = () => {
                         <div className='card__text'>
                             <span className='card__place'>Times Square</span>
                             <span className='card__location'>Manhattan, New York</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='card__mobile-container'>
-                <div className='row__two'>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
-                        </div>
-                    </div>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
-                        </div>
-                    </div>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
-                        </div>
-                    </div>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
-                        </div>
-                    </div>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
-                        </div>
-                    </div>
-                    <div className='card__wrapper'>
-                        <img src='https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-san-francisco.jpg' alt='test' className='card__visuals'/>
-                        <div className='card__text'>
-                            <span className='card__place'>Eiffel Tower</span>
-                            <span className='card__location'>Paris, France</span>
                         </div>
                     </div>
                 </div>

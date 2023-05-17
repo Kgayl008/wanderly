@@ -1,40 +1,31 @@
+import React, {useState} from "react";
 import './Name.scss';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/Logo/wanderly.png';
-import {useState} from 'react';
-// import {db} from '../../firebase';
-import firebase from '../../firebase';
-// import { collection } from '@firebase/firestore'
-// import '@firebase/firestore';
+import { collection, addDoc, doc } from '@firebase/firestore';
+import { db, auth} from '../../firebase';
 
 const Name = () => {
     const [name, setName] = useState('');
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    const handleInputChange = (event) => {
-        setName(event.target.value);
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        // Assuming you have the authenticated user object with user ID
-        const userId = firebase.auth().currentUser.uid;
-        console.log(userId);
-        
-        const db = firebase.firestore();
-        db.collection('users').doc(userId).set({name: name}).then(() => {
-            console.log('User data stored successfully');
+        try {
+            const userId = auth.currentUser.uid;
+            const userRef = collection(db, "users");
+            await addDoc(userRef, {
+                userId,
+                name
+            });
+            console.log("User data stored successfully");
             // Redirect or perform any necessary action
-        }).catch((error) => {
-            console.error('Error storing user data: ', error);
-        });
+        } catch (e) {
+            console.error('Error storing user data: ', e);
+        }
     };
-
-    
-
     return (
         <div className='name'>
             <header>
@@ -46,17 +37,21 @@ const Name = () => {
             <form onSubmit={handleSubmit}>
                 <input type='text' className='name__input'
                     value={name}
-                    onChange={handleInputChange}/>
-            <div className='next'>
-                <Link to='/photo'>
-                    <IconButton type='submit' >
-                        <ArrowForwardIosIcon fontSize='large'/>
-                    </IconButton>
-                </Link>
-            </div>
+                    onChange={
+                        (e) => setName(e.target.value)
+                    }/>
+                <button type='submit' className="name__button">Enter</button>
+                <div className='next'>
+                    <Link to='/photo'>
+                        <IconButton>
+                            <ArrowForwardIosIcon fontSize='large'/>
+                        </IconButton>
+                    </Link>
+                </div>
             </form>
         </div>
-    )
-}
+    );
+};
 
 export default Name;
+

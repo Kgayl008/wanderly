@@ -1,52 +1,73 @@
-import React, {useRef} from 'react';
-import { Form, Button, Card} from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Form, Button, Card} from 'react-bootstrap';
 import './SignIn.scss';
 import Logo from '../../assets/Logo/wanderly.png';
-import { useAuth } from '../../context/AuthContext/AuthContext'
+// import {useAuth} from '../../context/AuthContext/AuthContext';
+import {NavLink} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { UserAuth } from '../../context/AuthContext/AuthContext'
 
 const Signup = () => {
 
-    const emailRef = useRef()
-    const passwordRef = useRef()
-    const passwordConfirmRef = useRef()
-    const { signup } = useAuth()
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const { createUser } = UserAuth();
+    const navigate = useNavigate()
 
-    function handleSubmit(e) {
-        e.preventDefault()
-
-        signup(emailRef.current.value, passwordRef.current.value,)
-    }
-    return(
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError('');
+        try {
+            await createUser(email, password);
+            navigate('/name')
+        } catch (e) {
+            setError(e.message);
+            console.log(e.message);
+        }
+    };
+    
+    return (
         <div className='signup'>
             <header className='signup__header'>
-            <img src={Logo}
-                alt="Wanderly Logo"
-                className="signup__logo"/>
+                <img src={Logo}
+                    alt="Wanderly Logo"
+                    className="signup__logo"/>
             </header>
             <Card className='signup__card'>
                 <Card.Body>
                     <h2 className='signup__title'>Sign Up</h2>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
                             <Form.Label className='signup__subtitle'>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required className='signup__input'/>
+                            <Form.Control type="email"
+                                onChange={
+                                    (e) => setEmail(e.target.value)
+                                }
+                                required
+                                placeholder="Enter email"
+                                className='signup__input'/>
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label className='signup__subtitle'>Password</Form.Label>
-                            <Form.Control type="password" ref={passwordRef} required className='signup__input'/>
+                            <Form.Control type="password"
+                                onChange={
+                                    (e) => setPassword(e.target.value)
+                                }
+                                required
+                                placeholder="Password"
+                                className='signup__input'/>
                         </Form.Group>
-                        <Form.Group id="password-confirm">
-                            <Form.Label className='signup__subtitle'>Password Confirmation</Form.Label>
-                            <Form.Control type="password" ref={passwordConfirmRef} required className='signup__input'/>
-                        </Form.Group>
-                        <Button className='signup__button'>
-                        Sign Up
+                        <Button className='signup__button' type='submit'>
+                            Sign Up
                         </Button>
                     </Form>
                 </Card.Body>
             </Card>
             <div className='signup__question'>
-                Already have an Acount? Log In
+                Already have an Acount?
+                <NavLink to="/login" className='signup__login'>
+                    Log In</NavLink>
             </div>
         </div>
     )
@@ -54,6 +75,29 @@ const Signup = () => {
 
 export default Signup
 
+
+
+
+// const emailRef = useRef()
+    // const passwordRef = useRef()
+    // const passwordConfirmRef = useRef()
+    // // const {signup} = useAuth()
+    // const [error, setError] = useState('')
+    // const [loading, setLoading] = useState(false)
+
+    // async function handleSubmit(e) {
+    //     e.preventDefault();
+
+    //     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+    //         return setError('Passwords do not match');
+    //     }
+    //     try {
+
+    //         setError('')
+    //         setLoading(true)
+    //         await signup(emailRef.current.value, passwordRef.current.value);
+    //     } catch {setError('Failedto create an account')}
+    //     setLoading(false)}
 
 // import React, {useState} from 'react';
 // import {NavLink, useNavigate} from 'react-router-dom';
@@ -76,7 +120,7 @@ export default Signup
 //             const userCredential = await createUserWithEmailAndPassword(auth, email, password,);
 //             const user = userCredential.user;
 //             console.log(user);
-            
+
 //             navigate("/name");
 //             // ...
 

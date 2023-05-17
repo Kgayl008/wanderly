@@ -12,12 +12,13 @@ import Photo from './pages/Photo/Photo';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import SignIn from './pages/SignIn/SignIn';
-import { AuthProvider } from './context/AuthContext/AuthContext'
+import { AuthContextProvider  } from './context/AuthContext/AuthContext'
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 function App() {
     return (
         <>
-        <AuthProvider>
+        <AuthContextProvider >
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/signup" element={<SignIn/>}/>
@@ -29,8 +30,9 @@ function App() {
                 <Route path="/questions" element={<Questions/>}/>
                 <Route path="/swipe" element={<Swipe/>}/>
                 <Route path="/chat" element={<Chat/>}/>
+                <Route path="/account" element={<ProfilePage/>}/>
             </Routes>
-        </AuthProvider>
+        </AuthContextProvider >
         </>
     );
 }
@@ -38,10 +40,3 @@ function App() {
 export default App;
 
 
-// const db = firebase.firestore();
-
-// // Create a new collection for users
-// const usersCollection = db.collection("users");
-
-// // Export the collection for use in other parts of your app
-// export { usersCollection };
