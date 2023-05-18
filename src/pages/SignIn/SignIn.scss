@@ -1,8 +1,15 @@
+@use '../../styles/partials/mixins' as *;
 .signup{
     padding: 1rem;
     background-color: #f57f5b;
     width: 100%;
     height: 100vh;
+    @include tablet{
+        padding: 0 7rem;
+    }
+    @include desktop{
+        padding: 0 30rem;
+    }
     &__card{
         border: 1px solid #035c88;
         background-color: white;

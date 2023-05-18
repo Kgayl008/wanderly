@@ -1,71 +1,37 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Wanderly - Travel App for Solo Travelers (Mobile Application)
 
-## Available Scripts
 
-In the project directory, you can run:
+Introducing "Wanderly" - the travel app that connects solo travelers looking for adventure partners with just a swipe. Whether you're exploring a new city, hiking through the mountains, or relaxing on a beach, Wanderly makes it easy to find someone to share the experience with. 
 
-### `npm start`
+With Wanderly, you can create a profile, swipe through other solo travelers' profiles, and match with people who share your interests and travel style. Chat and get to know each other before you meet up, so you can plan your adventures together with confidence. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Say goodbye to lonely travel days and hello to unforgettable experiences with Wanderly - the app that makes solo travel social. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Users are able to swipe right and left on the cards.
+- Users can input their name and URL picture and then view their profile on the top right corner of the swipe page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Tech stack used
 
-### `npm run build`
+React.js
+Firestore :Authentication, Cloud Firestore
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#Installation on developer and production environments
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+react-tinder-card
+react-bootstrap
+@mui/icons-material
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# API references
 
-### `npm run eject`
+none
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Lessons learned & next steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I learned to store and retrieve user information such as names, profile images, and other relevant data. This allows me to create a customized profile page for each user.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+My next step is to add more information on the landing page and a chat functionality.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# wanderly

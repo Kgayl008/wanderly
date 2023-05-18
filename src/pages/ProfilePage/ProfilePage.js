@@ -47,18 +47,20 @@ const ProfilePage = () => {
     }
     return (
         <div className='account'>
+            <div className='account__header'>
             <Link to='/swipe'>
                 <IconButton>
                     <ArrowBackIosIcon fontSize="large"/>
                 </IconButton>
             </Link>
             <h2>Account</h2>
+            </div>
             <p>User Email: {
                 user && user.email
             }</p>
-            <p>{userData.name}</p>
-            <img src={userData.photoUrl} alt="Current users image"/>
-            <button onClick={handleLogout}>Logout</button>
+            <p className='account__name'>{userData.name}</p>
+            <img src={userData.photoUrl} alt="Current users image" className='account__photo'/>
+            <button onClick={handleLogout} className='account__button'>Logout</button>
         </div>
     );
 };
