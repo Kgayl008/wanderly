@@ -1,5 +1,6 @@
 import './Home.scss';
 import Paris from '../../assets/Video/paris.mp4';
+import Greece from '../../assets/Image/greece.webp';
 import TimesSquare from '../../assets/Image/newyork.jpg';
 import Lisbon from '../../assets/Image/lisbon.jpg';
 import Peru from '../../assets/Image/peru.jpg';
@@ -46,7 +47,7 @@ const Home = () => {
                             className='card__visuals'/>
                         <div className='card__text'>
                             <span className='card__place'>Lisbon, Portugal</span>
-                            {/* <span className='card__location'>Lisbon, Portugal</span> */} </div>
+                            </div>
                     </div>
                     <div className='card__wrapper'>
                         <img src={Peru}
@@ -58,10 +59,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='card__wrapper'>
-                        <img src="https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg" alt='Times Square in New York City' className='card__visuals'/>
+                        <img src={Greece} alt='View of the city in Santorini, Greece' className='card__visuals'/>
                         <div className='card__text'>
                             <span className='card__place'>Santorini, Greece</span>
-                            {/* <span className='card__location'>Manhattan, New York</span> */} </div>
+                            </div>
                     </div>
                     <div className='card__wrapper'>
                         <video src={London}

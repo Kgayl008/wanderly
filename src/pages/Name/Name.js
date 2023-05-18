@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/Logo/wanderly.png';
-import { collection, addDoc, doc, updateDoc } from '@firebase/firestore';
+import { doc, updateDoc } from '@firebase/firestore';
 import { db, auth} from '../../firebase';
 
 const Name = () => {
@@ -20,7 +20,7 @@ const Name = () => {
             await updateDoc(userDoc, {
                 name
             });
-            console.log("User data stored successfully");
+            // console.log("User data stored successfully");
             // Redirect or perform any necessary action
         } catch (e) {
             console.error('Error storing user data: ', e);

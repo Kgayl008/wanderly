@@ -18,7 +18,7 @@ const Header = ({backButton}) => {
                     alt="Wanderly Logo"
                     className="header__logo"/>
             </Link>
-            <Link to="/chat">
+            <Link>
                 <IconButton>
                     <ForumIcon fontSize="large"/>
                 </IconButton>

@@ -1,8 +1,4 @@
 
-// span{
-//     color: rgb(4, 1, 75);
-//     font-size: 23px;
-// }
 
 .home{
     width: 100%;
@@ -88,13 +84,10 @@
 &__one{
     display: flex;
     animation: slide 25s linear infinite;
+    white-space: nowrap;
 }
 }
-.row__two{
-    display: flex;
-    animation-direction: reverse;
-    animation: slide 25s linear infinite;
-}
+
 @keyframes slide {
     from {
       transform: translateX(0%);
@@ -111,3 +104,6 @@
     height: 18.375rem;
     padding: 1rem;
 }
+.card__container {
+    overflow: hidden;
+  }

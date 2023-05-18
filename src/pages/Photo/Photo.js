@@ -3,9 +3,9 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from "@mui/material/IconButton";
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/Logo/wanderly.png';
-import { useState } from 'react';
-import {  updateDoc, doc } from 'firebase/firestore';
-import { db, auth } from '../../firebase';
+import {useState} from 'react';
+import {updateDoc, doc} from 'firebase/firestore';
+import {db, auth} from '../../firebase';
 
 
 const Photo = () => {
@@ -15,22 +15,9 @@ const Photo = () => {
         e.preventDefault();
 
         try {
-            // const userId = auth.currentUser.uid;
-            // await db.collection("users").doc(userId).update({
-            //     photoUrl
-            //   })
-
-              const userId = auth.currentUser.uid;
-              const userDoc = doc(db, "users", userId)
-              await updateDoc(userDoc, {
-                photoUrl
-              });
-              //const userRef = collection(db, "users");
-            
-            // await addDoc(userRef, {
-            //     userId,
-            //     photoUrl
-            // });
+            const userId = auth.currentUser.uid;
+            const userDoc = doc(db, "users", userId)
+            await updateDoc(userDoc, {photoUrl});
             console.log("Photo URL stored successfully");
             // Redirect or perform any necessary action
         } catch (e) {
