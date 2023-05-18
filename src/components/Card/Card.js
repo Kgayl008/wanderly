@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
-import database from "../../firebase";
+import firestore from "../../firebase";
 import './Card.scss';
 
 const Card = () => {
@@ -9,7 +9,7 @@ const Card = () => {
     const [people, setPeople] = useState([]);
 
 useEffect(() => {
-    database.collection("people").onSnapshot(snapshot => (
+    firestore.collection("people").onSnapshot(snapshot => (
         setPeople(snapshot.docs.map(doc => doc.data()))
     ))
 }, [])

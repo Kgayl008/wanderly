@@ -19,8 +19,8 @@
         height: 2.6875rem;
         border-radius: 10px;
         border: none;
+        margin-bottom: 2rem;
         padding: .625rem;
-        margin-bottom: 15rem;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
     &__logo{
@@ -32,4 +32,19 @@
 header{
     display: flex;
     justify-content: center;
+}
+
+.name__button{
+    height: 2.6875rem;
+    background-color: #035c88;
+    color: white;
+    font-weight: 700;
+    margin-left: 14rem;
+    width: 4.125rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.next{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
