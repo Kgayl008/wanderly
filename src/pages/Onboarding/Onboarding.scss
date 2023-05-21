@@ -1,12 +1,11 @@
 @use "../../styles/partials/typography" as *;
 
-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    opacity: 0.7;
-    pointer-events: none;
-}
+// video {
+//     width: 100vw;
+//     height: 100vh;
+//     object-fit: cover;
+//     opacity: 0.7;
+// }
 
 .onborading{
 &__logo {
@@ -37,10 +36,14 @@ video {
     border-radius: 25px;
     border: 2px solid #035c88;
     color: #ec6408;
-    // color: #282327;
-    // background-color: #529cd2;
     background-color: white;
     font-family: "Alegreya Sans SC";
+}
+&__video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7;
 }
 }
 

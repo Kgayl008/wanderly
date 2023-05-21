@@ -10,7 +10,8 @@ const Onboarding = () => {
             <video src={Video}
                 autoPlay
                 loop
-                muted/>
+                muted
+                className='onborading__video'/>
             <div className='content'>
                 <img src={Logo}
                     alt='Wanderly logo'
