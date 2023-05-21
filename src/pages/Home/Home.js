@@ -19,6 +19,7 @@ const Home = () => {
                 <h2 className='home__text'><span>Swipe Right</span> on Your Next <span>Adventure</span> with Wanderly - The <span>Travel App</span> for <span>Solo Explorers</span></h2>
             </div>
             <h2 className='home__sub-title'>Find Your <br/>Next Adventure </h2>
+            <div className='card__container'>
             <div className='card__mobile-container'>
                 <div className='row__one'>
                     <div className='card__wrapper'>
@@ -85,6 +86,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <div className='button-section'>
             <Link to='/onboarding'>

@@ -10,7 +10,7 @@ h1{
     height: 100vh;
     padding: 1rem;
     @include tablet{
-        padding: 0 7rem;
+        padding: 0 37rem;
     }
     &__title{
         padding-top: 1.5rem;
@@ -28,7 +28,7 @@ h1{
     border-radius: 14px;
     padding: 4px;
     border: none;
-    margin: 1px;
+    margin: 2px;
 }
 .profile__button.selected{
     background-color: black;
