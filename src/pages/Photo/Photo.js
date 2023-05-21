@@ -32,15 +32,19 @@ const Photo = () => {
                         alt='Wanderly logo'
                         className='name__logo'/>
                 </header>
+                <div className='name__title'>
                 <h1 className='name__question'>Add your first photo</h1>
+                </div>
+                <div className="name__form-container">
                 <form onSubmit={handleSubmit}>
                     <input type="text" className='name__input' placeholder="Enter URL"
                         value={photoUrl}
                         onChange={
                             (e) => setPhotoUrl(e.target.value)
-                    }></input>
+                    }></input> <br/>
                     <button type='submit' className="name__button">Enter</button>
                 </form>
+                </div>
                 <div className='next'>
                     <Link to='/profile'>
                         <IconButton>

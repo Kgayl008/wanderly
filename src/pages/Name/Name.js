@@ -33,22 +33,27 @@ const Name = () => {
                     alt='Wanderly logo'
                     className='name__logo'/>
             </header>
-            <h1 className='name__question'>What's your first name?</h1>
+            <div className="name__title">
+                <h1 className='name__question'>What's your first name?</h1>
+            </div>
+            <div className="name__form-container">
             <form onSubmit={handleSubmit}>
                 <input type='text' className='name__input'
                     value={name}
                     onChange={
                         (e) => setName(e.target.value)
                     }/>
+                    <br/>
                 <button type='submit' className="name__button">Enter</button>
                 <div className='next'>
                     <Link to='/photo'>
-                        <IconButton>
+                        <IconButton >
                             <ArrowForwardIosIcon fontSize='large'/>
                         </IconButton>
                     </Link>
                 </div>
             </form>
+            </div>
         </div>
     );
 };

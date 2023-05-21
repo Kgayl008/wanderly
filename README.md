@@ -18,7 +18,7 @@ Say goodbye to lonely travel days and hello to unforgettable experiences with Wa
 React.js
 Firestore :Authentication, Cloud Firestore
 
-#Installation on developer and production environments
+# Installation on developer and production environments
 
 react-tinder-card
 react-bootstrap

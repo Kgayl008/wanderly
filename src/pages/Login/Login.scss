@@ -7,7 +7,8 @@
         border: 1px solid #035c88;
         background-color: white;
         max-width: none;
-        width: 100%;
+        width: 18rem;
+        height: 21.875rem;
     }
     &__title{
         display: flex;
@@ -26,14 +27,14 @@
         border: none;
         width: 100%;
         margin-top: .625rem;
-        height: 37px;
+        height: 2.3125rem;
         border-radius: 19px;
         background-color: #035c88;
         color: white;
         font-weight: 700;
     }
     &__logo{
-        height: 85px;
+        height: 5.3125rem;
         object-fit: contain;
     }
     &__header{
@@ -52,6 +53,11 @@
     }
     &__login{
         color: black;
+        margin-left: .75rem;
+    }
+    &__card-container{
+        display: flex;
+        justify-content: center;
     }
 }
 #email,

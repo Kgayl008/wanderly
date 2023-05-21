@@ -32,6 +32,7 @@ const Login = () => {
                     alt="Wanderly Logo"
                     className="login__logo"/>
             </header>
+            <div className='login__card-container'>
             <Card className='login__card'>
                 <Card.Body>
                     <h2 className='login__title'>Log In</h2>
@@ -63,6 +64,7 @@ const Login = () => {
                     </Form>
                 </Card.Body>
             </Card>
+            </div>
             <div className='login__question'>
                 Need an Acount?
                 <NavLink to="/signup" className='login__login'>
