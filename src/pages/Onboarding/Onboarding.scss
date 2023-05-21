@@ -1,11 +1,11 @@
 @use "../../styles/partials/typography" as *;
 
-// video {
-//     width: 100vw;
-//     height: 100vh;
-//     object-fit: cover;
-//     opacity: 0.7;
-// }
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7;
+}
 
 .onborading{
 &__logo {
@@ -38,12 +38,6 @@
     color: #ec6408;
     background-color: white;
     font-family: "Alegreya Sans SC";
-}
-&__video{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    opacity: 0.7;
 }
 }
 
