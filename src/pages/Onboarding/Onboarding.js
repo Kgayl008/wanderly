@@ -1,17 +1,13 @@
 import './Onboarding.scss';
 import React from 'react';
-import Video from '../../assets/Video/video.mp4';
 import Logo from '../../assets/Logo/wanderly.png';
 import {Link} from "react-router-dom";
+import Beach from '../../assets/Image/beach.jpg'
 
 const Onboarding = () => {
     return (
         <div className='onborading'>
-            <video src={Video}
-                autoPlay
-                loop
-                muted
-                className='onborading__video'/>
+            <img src={Beach} alt='Sunset at the beach' className='onborading__image'/>
             <div className='content'>
                 <img src={Logo}
                     alt='Wanderly logo'
